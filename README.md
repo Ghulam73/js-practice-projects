@@ -4,7 +4,7 @@ Daily JavaScript practice log. Each day covers one topic through targeted practi
 
 ## Why This Repo Exists
 
-I'm a MERN/Next.js developer with production projects already shipped (visa processing platforms, e-commerce, booking systems), but a lot of that work leaned heavily on AI-assisted coding (Claude, Cursor). This repo is where I rebuild the fundamentals independently - JS core concepts, written and debugged by hand, reviewed with AI only *after* attempting on my own.
+I'm a MERN developer with production projects already shipped (visa processing platforms, e-commerce, booking systems), but a lot of that work leaned heavily on AI-assisted coding (Claude, Cursor). This repo is where I rebuild the fundamentals independently - JS core concepts, written and debugged by hand, reviewed with AI only *after* attempting on my own.
 
 ## Structure
 
