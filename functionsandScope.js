@@ -62,3 +62,73 @@ function fullName(firstName, lastName){
 
 const myName = fullName("Ghulam", "Ghous");
 console.log(myName);
+
+
+function calculateCartPrice(...prices){
+    return prices;
+}
+
+console.log(calculateCartPrice(600,877,69));
+
+console.log(calculateCartPrice(369,897,62));
+
+
+function returnRestValues(val1, val2, ...remainingValues){
+    let sum = val1+val2+remainingValues;
+    return sum;
+}
+
+console.log(returnRestValues(100, 200, 300, 400, 500));
+
+
+function studentMarks(...marks){
+    return marks;
+}
+
+console.log(studentMarks(80, 75, 90, 60))
+
+
+const user = {
+    username: "Ghulam Ghous",
+    price: 999
+}
+
+// function handleObject(anyObject){
+//     return `Username is ${anyObject.username} and price is ${anyObject.price}`
+// }
+
+// console.log(handleObject(user))
+
+
+const customer = {
+    id: 10293,
+    profile: {
+        name: "Ghulam",
+        tier: "Premium"
+    },
+    cart: [299, 150, 45, 900]
+};
+
+function printReceipt(anyObject){
+    const discountPrice = null;
+    const sum = anyObject.cart;
+    const total = sum.reduce((sum, item) => sum + item, 0);
+    console.log(total);
+    return `${anyObject.profile.name} (${anyObject.profile.tier}) spent a total of ${total}. Discount code applied : ${discountPrice}`;
+}
+
+
+console.log(printReceipt(customer))
+
+
+function handleObject2(anyObject){
+    return `Username is ${anyObject.username} and the price is ${anyObject.price}`
+}
+
+const newUser = {
+    username : "Ali",
+    price : 789
+}
+
+console.log(handleObject2(newUser));
+
