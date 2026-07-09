@@ -26,11 +26,11 @@ const work = {
     company:  "Airvon"
 }
 
-// console.log(freelancer.name); 
-// console.log(freelancer['email']);
-// console.log(freelancer[freeLancerId]);
-// console.log(freelancer.address.city);
-// console.log(freelancer.socialProfiles.github);
+console.log(freelancer.name); 
+console.log(freelancer['email']);
+console.log(freelancer[freeLancerId]);
+console.log(freelancer.address.city);
+console.log(freelancer.socialProfiles.github);
 
 freelancer.hourlyRate = "45$";
 freelancer.isAvailable = false;
