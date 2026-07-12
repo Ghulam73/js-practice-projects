@@ -162,3 +162,81 @@ function getCourseDetails(obj){
 }
 
 console.log(getCourseDetails(course1));
+
+
+function getLaptopDetails(newObject){
+    return `${newObject.brand} ${newObject.model} has ${newObject.ram} and costs ${newObject.price}`
+}
+
+console.log(getLaptopDetails = {
+    brand: "DELL",
+    model : "XPS",
+    price : 250000,
+    ram : "16GB"
+})
+
+
+const newInvoice = {
+    clientName : "Saif Rashid",
+    serviceName : "Project explanation",
+    servicePrice : 5500,
+    tax : 800
+}
+
+function getNewInvoiceTotal(obj1){
+    const total = obj1.servicePrice + obj1.tax;
+    return total;
+}
+
+console.log("The Total Amount is", getNewInvoiceTotal(newInvoice));
+
+
+const  userDetails = {
+    username: "Saif Rashid",
+    email: "rfais770@gmail.com",
+    profession : "Software Developer",
+    isAvailable  : true
+}
+
+function getUserDetail(userObject){
+    return `${userObject.username} and the email is ${userObject.email} ${userObject.profession} and the availability is ${userObject.isAvailable}`
+}
+
+console.log(getUserDetail(userDetails));
+
+
+
+const carDetails = {
+    brand: "Toyota",
+    model : "Aqua",
+    price  : 3000000
+}
+
+carDetails.price = 400000;
+
+
+function getCarDetails(carObject){
+    return `I drive ${carObject.brand} ${carObject.model} and its price is ${carObject.price}`
+}
+
+console.log(getCarDetails(carDetails));
+
+function checkOrderDetails(userOrder) {
+    console.log("Username is:", userOrder.username);
+    console.log("Price is:", userOrder.price);
+}
+
+checkOrderDetails({
+    username: "Ghulam Ghous"
+});
+
+/* EXPLANATION OF THE RESULT:
+   What happens to price? It outputs: undefined.
+   
+   Why? When the function receives the object { username: "CodingStudent99" }, 
+   it successfully finds 'userOrder.username'. However, when it looks for 
+   'userOrder.price', that key doesn't exist in the object we passed in. 
+   
+   In JavaScript, trying to access a property that hasn't been defined on 
+   an object will not throw an error; it will simply return the value 'undefined'.
+*/
