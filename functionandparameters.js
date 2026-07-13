@@ -232,11 +232,125 @@ checkOrderDetails({
 
 /* EXPLANATION OF THE RESULT:
    What happens to price? It outputs: undefined.
-   
-   Why? When the function receives the object { username: "CodingStudent99" }, 
-   it successfully finds 'userOrder.username'. However, when it looks for 
-   'userOrder.price', that key doesn't exist in the object we passed in. 
-   
-   In JavaScript, trying to access a property that hasn't been defined on 
-   an object will not throw an error; it will simply return the value 'undefined'.
 */
+
+const programming = ["JavaScript", "Java", "Python"]
+
+function getArrayValue(newArray){
+    return newArray[0]
+}
+
+console.log(getArrayValue(programming))
+
+
+const skills = ["JS", "Python", "C#"]
+
+function getSkillsValues(array1){
+    return array1[array1.length-1];
+}
+
+console.log(getSkillsValues(skills))
+
+
+
+const products = [
+    "Laptop", "Mobile", "Keyboard", "Mouse"
+]
+
+function returnThirdValue(thirdArray){
+    return thirdArray[2];
+}
+
+console.log("The third value is :", returnThirdValue(products))
+
+
+const students  = [
+    "Ghulam Ghous",
+    "Saif Rashid",
+    "Nauman Yasin",
+    "Abdul Rehman",
+    "Dayyan Asim"
+]
+
+function returnStudent(studentArray){
+    return studentArray[1];
+}
+
+console.log("The Second Student is : ", returnStudent(students));
+
+
+function returnFirstValue(getArray1){
+    return getArray1[0];
+}
+
+console.log("The first value is: ",returnFirstValue(["React","Node","Python"]))
+
+
+const pricess = [
+    500, 1000, 1500, 2000
+]
+
+function returnLastPrice(priceArray){
+    return priceArray[3];
+}
+
+console.log("The Last Price is: ",returnLastPrice(pricess))
+
+
+const skillss = [
+    "HTML", "CSS", ["React", "Next.Js"]
+];
+
+function getSkillArray(skillssArray){
+    return skillssArray[2][1]
+}
+
+console.log("The Nested Array Value: ", getSkillArray(skillss));
+
+
+const objectArray  = [
+    {"title": "JS", "price" : 20000, "instructor" : "Ghulam Ghous"},
+    {"title": "Python", "price" : 40000, "instructor" : "Saif Rashid"},
+    {"title": "C#", "price" : 60000, "instructor" : "Nauman Bhatti"}
+]
+
+
+function returnObjectArray(arrayObject){
+    return arrayObject[1].title;
+}
+
+console.log("The object array is: ", returnObjectArray(objectArray));
+
+
+function returnThirdObjectCourse(arrObject, objectarray){
+    return arrObject[2];
+}
+
+console.log("The third object is:" , returnThirdObjectCourse(objectArray))
+
+
+const freelancerss = [
+    {"Name": "Ghulam Ghous", "Skill" : "Full Stack Developer", "Rate" : 30},
+    {"Name": "Saif Rashid", "Skill" : "AI Developer", "Rate" : 40},
+    {"Name": "Nauman Bhatti", "Skill" : "Game Developer", "Rate" : 20}
+]
+
+function getfreelancerssDetails(freelancersArray){
+    return freelancersArray[0].Rate;
+}
+
+console.log("The first freelancer rate is:" , getfreelancerssDetails(freelancerss));
+
+
+
+const cart2 = ["Fries", "Handwash", "Soap", "Shampoo"];
+
+function returnFirstCartItem(cartArray) {
+    return cartArray[0];
+}
+function returnLastCartItem(cartArray) {
+    return cartArray[cartArray.length - 1]; 
+}
+
+console.log("The first cart item is:", returnFirstCartItem(cart2));
+console.log("The last cart item is:", returnLastCartItem(cart2));
