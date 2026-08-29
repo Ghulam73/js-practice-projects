@@ -148,7 +148,7 @@ console.log(`Average Salary: $${averageSalary}`);
 console.log(`Salaries Above $60,000: ${salariesAbove60000}`);
 
 
-const orders = [
+const orders1 = [
     { id: 101, amount: 2500, status: "completed" },
     { id: 102, amount: 7000, status: "completed" },
     { id: 103, amount: 1500, status: "cancelled" },
