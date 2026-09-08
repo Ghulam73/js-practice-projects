@@ -1,0 +1,60 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document Object Model</title>
+    </head>
+    <body
+        style="
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        "
+    >
+        <div id="admin-panel">
+        <h1>Admin Panel</h1>
+
+        <div class="user-card">
+            <h2 class="username">Ghulam</h2>
+            <p class="role">Developer</p>
+            <span class="status active">Active</span>
+        </div>
+
+        <div class="user-card">
+            <h2 class="username">Ahmed</h2>
+            <p class="role">Designer</p>
+            <span class="status inactive">Inactive</span>
+        </div>
+
+        <div class="user-card">
+            <h2 class="username">Sara</h2>
+            <p class="role">Manager</p>
+            <span class="status active">Active</span>
+        </div>
+        </div>
+    </body>
+
+    <script>
+        const dashboard = document.querySelector('h1');
+        console.log(dashboard);
+        const freelancers = document.getElementsByClassName("user-card");
+        console.log(freelancers);
+        const names = document.getElementsByClassName("username");
+        console.log(names);
+        const skills = document.getElementsByClassName("role");
+        console.log(skills);
+        const statuses = document.getElementsByClassName("status active");
+        console.log(statuses);
+        const inactiveStatuses = document.getElementsByClassName("status inactive");
+        console.log(inactiveStatuses);
+        const firstUserName = document.querySelector(".username");
+        console.log(firstUserName);
+        const thirdUserRole = document.querySelectorAll(".role")[2];
+        console.log(thirdUserRole);
+        const statusesList = document.querySelectorAll(".status");
+        console.log(statusesList);
+        const activeStatuses = document.querySelectorAll(".status.active");
+        console.log(activeStatuses);
+    </script>
+    </html>
