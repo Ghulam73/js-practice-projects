@@ -6,7 +6,7 @@
     <title>DOM | Selecting Elements</title>
 </head>
 <body style="background-color: black; color: white; font-family: Arial, sans-serif;">
-    <!-- <div id="product">
+    <div id="product">
     <h2>Mechanical Keyboard</h2>
     <p class="price">$80</p>
 </div>
@@ -31,10 +31,10 @@
         <h3>Keyboard</h3>
         <p class="price">$60</p>
     </div>
-</div> -->
+</div>
 
 
-<!-- <div id="applications">
+<div id="applications">
     <div class="application">
         <h2>Frontend Developer</h2>
         <p class="company">Google</p>
@@ -46,9 +46,9 @@
         <p class="company">Microsoft</p>
         <p class="status">Rejected</p>
     </div>
-</div> -->
+</div>
 
-<!-- <div id="freelancers">
+<div id="freelancers">
     <div class="freelancer">
         <h2 class="name">Ahmed</h2>
         <p class="skill">UI Designer</p>
@@ -60,10 +60,10 @@
         <p class="skill">Backend Developer</p>
         <p class="status">Busy</p>
     </div>
-</div> -->
+</div>
 
 
-<!-- <div id="admin-panel">
+<div id="admin-panel">
 
     <h1>User Management</h1>
 
@@ -85,9 +85,9 @@
         <p class="status">Active</p>
     </div>
 
-</div> -->
+</div>
 
-<!-- <div id="inventory">
+<div id="inventory">
 
     <div class="product">
         <h2 class="name">Laptop</h2>
@@ -107,7 +107,7 @@
         <p class="stock">In Stock</p>
     </div>
 
-</div> -->
+</div>
 
 
 <div id="tickets">
@@ -134,118 +134,118 @@
 
 </body>
 <script>
-    // const product = document.getElementById("product");
-    // const productName = document.querySelector("h2");
-    // productName.innerText = "Gaming Mechanical Keyboard";
-    // const creating = document.createElement("p");
-    // creating.innerText = "In Stock";
-    // product.appendChild(creating);
-    // console.log(product);
+    const product = document.getElementById("product");
+    const productName = document.querySelector("h2");
+    productName.innerText = "Gaming Mechanical Keyboard";
+    const creating = document.createElement("p");
+    creating.innerText = "In Stock";
+    product.appendChild(creating);
+    console.log(product);
 
-    // const profile = document.querySelector(".profile");
-    // const username = document.querySelector(".username");
-    // username.innerText = "Ghulam Ghous";
-    // const role = document.querySelector(".role");
-    // role.innerHTML = "Full Stack Developer";
-    // const newElement = document.createElement("p");
-    // newElement.innerText = "Available for Freelance Work";
-    // profile.appendChild(newElement);
-    // console.log(profile);
-
-
-    // const notifications = document.getElementById("notifications");
-    // const notificationList = document.getElementsByClassName("notification");
-    // notificationList[2].remove();
-    // const newNotification = document.createElement("p");
-    // newNotification.className = "notification";
-    // newNotification.innerText = "Your application was accepted";
-    // notifications.appendChild(newNotification);
-    // console.log(notifications);
-
-    // const cart = document.getElementById("cart");
-    // const items = document.getElementsByClassName("item");
-    // items[0].querySelector("h3").innerText = "Gaming Mouse";
-    // items[0].querySelector(".price").innerText = "$40";
-    // const newItem = document.createElement("div");
-    // newItem.className = "item";
-    // newItem.innerHTML = `
-    //     <h3>Headset</h3>
-    //     <p class="price">$70</p>
-    // `;
-    // cart.appendChild(newItem);
-    // items[1].remove();
-    // console.log(cart);
+    const profile = document.querySelector(".profile");
+    const username = document.querySelector(".username");
+    username.innerText = "Ghulam Ghous";
+    const role = document.querySelector(".role");
+    role.innerHTML = "Full Stack Developer";
+    const newElement = document.createElement("p");
+    newElement.innerText = "Available for Freelance Work";
+    profile.appendChild(newElement);
+    console.log(profile);
 
 
-    // const applications = document.getElementById("applications");
-    // const applicationList = document.getElementsByClassName("application");
-    // applicationList[0].querySelector('.status').innerHTML = "Applied";
-    // applicationList[1].querySelector('.status').innerHTML = "Withdrawn";
-    // const newApplication = document.createElement("div");
-    // newApplication.className = "application";
-    // newApplication.innerHTML = `
-    //     <h2>Full Stack Developer</h2>
-    //     <p class="company">Amazon</p>
-    //     <p class="status">Applied</p>
-    // `;
-    // applications.appendChild(newApplication);
-    // applicationList[1].remove();
-    // console.log(applications);
+    const notifications = document.getElementById("notifications");
+    const notificationList = document.getElementsByClassName("notification");
+    notificationList[2].remove();
+    const newNotification = document.createElement("p");
+    newNotification.className = "notification";
+    newNotification.innerText = "Your application was accepted";
+    notifications.appendChild(newNotification);
+    console.log(notifications);
+
+    const cart = document.getElementById("cart");
+    const items = document.getElementsByClassName("item");
+    items[0].querySelector("h3").innerText = "Gaming Mouse";
+    items[0].querySelector(".price").innerText = "$40";
+    const newItem = document.createElement("div");
+    newItem.className = "item";
+    newItem.innerHTML = `
+        <h3>Headset</h3>
+        <p class="price">$70</p>
+    `;
+    cart.appendChild(newItem);
+    items[1].remove();
+    console.log(cart);
 
 
-//     const dashboard = document.getElementById("freelancers");
-//     const freelancerList = document.getElementsByClassName("freelancer");
-//     freelancerList[0].querySelector('.skill').innerHTML = 'React Developer';
-//     freelancerList[0].querySelector('.status').innerHTML = 'Busy';
-//     freelancerList[1].querySelector('.status').innerHTML = 'Available';
-//     const newFreelancer  = document.createElement("div");
-//     newFreelancer.className = "freelancer";
-//     newFreelancer.innerHTML = `
-//         <h2 class="name">Ghulam</h2>
-//         <p class="skill">Full Stack Developer</p>
-//         <p class="status">Available</p>
-//     `;
-//     dashboard.appendChild(newFreelancer);
-//     freelancerList[1].remove();
-//     console.log(dashboard);
+    const applications = document.getElementById("applications");
+    const applicationList = document.getElementsByClassName("application");
+    applicationList[0].querySelector('.status').innerHTML = "Applied";
+    applicationList[1].querySelector('.status').innerHTML = "Withdrawn";
+    const newApplication = document.createElement("div");
+    newApplication.className = "application";
+    newApplication.innerHTML = `
+        <h2>Full Stack Developer</h2>
+        <p class="company">Amazon</p>
+        <p class="status">Applied</p>
+    `;
+    applications.appendChild(newApplication);
+    applicationList[1].remove();
+    console.log(applications);
 
-        // const adminPanel = document.getElementById("admin-panel");
-        // const userList = document.getElementsByClassName("user");
-        // userList[1].querySelector('.status').innerHTML = 'Active';
-        // userList[2].querySelector('.role').innerHTML = 'Project Manager';
-        // const newUser = document.createElement("div");
-        // newUser.className = "user";
-        // newUser.innerHTML = `
-        //     <h2 class="username">Ali</h2>
-        //     <p class="role">Backend Developer</p>
-        //     <p class="status">Active</p>
-        // `;
-        // adminPanel.appendChild(newUser);
-        // userList[0].remove();
-        // const newElement = document.createElement("p");
-        // newElement.innerText = "Last Login: Today";
-        // userList[0].appendChild(newElement);
 
-        // console.log(adminPanel);
+    const dashboard = document.getElementById("freelancers");
+    const freelancerList = document.getElementsByClassName("freelancer");
+    freelancerList[0].querySelector('.skill').innerHTML = 'React Developer';
+    freelancerList[0].querySelector('.status').innerHTML = 'Busy';
+    freelancerList[1].querySelector('.status').innerHTML = 'Available';
+    const newFreelancer  = document.createElement("div");
+    newFreelancer.className = "freelancer";
+    newFreelancer.innerHTML = `
+        <h2 class="name">Ghulam</h2>
+        <p class="skill">Full Stack Developer</p>
+        <p class="status">Available</p>
+    `;
+    dashboard.appendChild(newFreelancer);
+    freelancerList[1].remove();
+    console.log(dashboard);
 
-        // const inventory = document.getElementById("inventory");
-        // const productList = document.getElementsByClassName("product");
-        // productList[0].querySelector('.price').innerHTML = '$1100';
-        // productList[1].querySelector('.stock').innerHTML = 'In Stock';
-        // productList[2].remove();
-        // const newProduct = document.createElement("div");
-        // newProduct.className = "product";
-        // newProduct.innerHTML = `
-        //     <h2 class="name">Monitor</h2>
-        //     <p class="price">$250</p>
-        //     <p class="stock">In Stock</p>
-        // `;
-        // inventory.appendChild(newProduct);
-        // const anotherElement = document.createElement("p");
-        // anotherElement.className = "shipping";
-        // anotherElement.innerText = "Free Shipping";
-        // productList[0].appendChild(anotherElement);
-        // console.log(inventory);
+        const adminPanel = document.getElementById("admin-panel");
+        const userList = document.getElementsByClassName("user");
+        userList[1].querySelector('.status').innerHTML = 'Active';
+        userList[2].querySelector('.role').innerHTML = 'Project Manager';
+        const newUser = document.createElement("div");
+        newUser.className = "user";
+        newUser.innerHTML = `
+            <h2 class="username">Ali</h2>
+            <p class="role">Backend Developer</p>
+            <p class="status">Active</p>
+        `;
+        adminPanel.appendChild(newUser);
+        userList[0].remove();
+        const newElement = document.createElement("p");
+        newElement.innerText = "Last Login: Today";
+        userList[0].appendChild(newElement);
+
+        console.log(adminPanel);
+
+        const inventory = document.getElementById("inventory");
+        const productList = document.getElementsByClassName("product");
+        productList[0].querySelector('.price').innerHTML = '$1100';
+        productList[1].querySelector('.stock').innerHTML = 'In Stock';
+        productList[2].remove();
+        const newProduct = document.createElement("div");
+        newProduct.className = "product";
+        newProduct.innerHTML = `
+            <h2 class="name">Monitor</h2>
+            <p class="price">$250</p>
+            <p class="stock">In Stock</p>
+        `;
+        inventory.appendChild(newProduct);
+        const anotherElement = document.createElement("p");
+        anotherElement.className = "shipping";
+        anotherElement.innerText = "Free Shipping";
+        productList[0].appendChild(anotherElement);
+        console.log(inventory);
 
 
         const tickets = document.getElementById("tickets");

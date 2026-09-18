@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Project</title>
+</head>
+<body>
+    <div id="dashboard">
+
+    <h1>My Projects</h1>
+
+    <div class="project">
+        <h2 class="project-name">E-commerce Website</h2>
+        <p class="client">Client: ABC Store</p>
+        <p class="status">In Progress</p>
+    </div>
+
+    <div class="project">
+        <h2 class="project-name">Portfolio Website</h2>
+        <p class="client">Client: John Smith</p>
+        <p class="status">Completed</p>
+    </div>
+
+</div>
+</body>
+<script>
+    const dashboard = document.getElementById('dashboard');
+    const projectLists = document.getElementsByClassName('project');
+    console.log(projectLists);
+    const projectNames = document.getElementsByClassName('project-name');
+    const clients = document.getElementsByClassName('client');
+    const statuses = document.getElementsByClassName('status');
+
+    projectNames[0].innerHTML = 'Multi-Vendor E-commerce Platform';
+    statuses[0].innerHTML = 'Completed';
+    clients[1].innerHTML = 'Sarah Khan';
+    statuses[1].innerHTML = 'In Progress';
+
+    const newProject = document.createElement('div');
+    newProject.className = 'project';
+    newProject.innerHTML = `
+        <h2 class="project-name">Mobile Banking App</h2>
+        <p class="client">Client: XYZ Technologies</p>
+        <p class="status">In Progress</p>
+    `;
+    dashboard.appendChild(newProject);
+
+    const newParagraph = document.createElement('p');
+    newParagraph.className = 'Deadline';
+    newParagraph.innerHTML = 'Deadline: September 30';
+    newProject.appendChild(newParagraph);
+
+    projectLists[1].remove();
+
+
+    console.log(projectLists)
+
+
+</script>
+</html>
