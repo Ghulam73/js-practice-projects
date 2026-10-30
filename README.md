@@ -6,29 +6,6 @@ Daily JavaScript practice log. Each day covers one topic through targeted practi
 
 I'm a MERN developer with production projects already shipped (visa processing platforms, e-commerce, booking systems), but a lot of that work leaned heavily on AI-assisted coding (Claude, Cursor). This repo is where I rebuild the fundamentals independently - JS core concepts, written and debugged by hand, reviewed with AI only *after* attempting on my own.
 
-## Structure
-
-```
-js-practice-projects/
-├── day-01-variables-datatypes/
-│   ├── questions/            # 6-7 practice questions for the day's topic
-│   │   ├── q1.js
-│   │   ├── q2.js
-│   │   └── ...
-│   ├── mini-project/         # ~200 line project combining the day's concepts
-│   │   └── project.js
-│   └── notes.md              # 2-3 line self-explanation of the concept
-├── day-02-hoisting/
-│   ├── questions/
-│   ├── mini-project/
-│   └── notes.md
-...
-└── reviews/
-    ├── week-01-mixed-review.js
-    ├── week-02-mixed-review.js
-    └── rebuilds/              # old mini-projects re-attempted from scratch
-        └── day-05-rebuild.js
-```
 
 ## Daily Workflow
 
